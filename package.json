@@ -1,0 +1,17 @@
+{
+  "name": "quasimodo",
+  "version": "1.0.0",
+  "description": "Node server that returns a random youtube video id of a djent song",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "node get-youtube-data.js",
+    "start": "node server.js"
+  },
+  "author": "Shaurya Arora",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.72.0"
+  }
+}
