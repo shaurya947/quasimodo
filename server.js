@@ -13,6 +13,6 @@ app.get('/', function(req, res){
 	res.send(videoIdArray[Math.floor(Math.random() * videoIdArray.length)]);
 });
 
-app.listen(3000, function(){
-	console.log('Server running on port 3000');
+app.listen(8080, function(){
+	console.log('Server running on port 8080');
 })
