@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors');
 var fs = require('fs');
 var videoIdFilePath = '/youtube/video-ids';
 
@@ -7,6 +8,8 @@ var videoIdArray = fs.readFileSync(__dirname + videoIdFilePath).toString().split
 videoIdArray.pop();
 
 var app = express();
+
+app.use(cors());
 
 app.get('/', function(req, res){
 	// return rando video id

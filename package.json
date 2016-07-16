@@ -2,9 +2,9 @@
   "name": "quasimodo",
   "version": "1.0.0",
   "description": "Node server that returns a random youtube video id of a djent song",
-  "repository" :{ 
-    "type" : "git",
-    "url" : "https://github.com/shaurya947/quasimodo.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaurya947/quasimodo.git"
   },
   "main": "server.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "author": "Shaurya Arora",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.14.0",
     "request": "^2.72.0"
   }
